@@ -1,6 +1,7 @@
 package net.ari.mymod;
 
 import com.mojang.logging.LogUtils;
+import net.ari.mymod.block.ModBlocks;
 import net.ari.mymod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,6 +24,7 @@ public class MyMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
