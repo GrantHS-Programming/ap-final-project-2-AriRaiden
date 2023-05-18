@@ -1,2 +1,2 @@
 # AP Computer Science A Final Project
-Name:
+Name: Ari G, Logan R
