@@ -1,6 +1,6 @@
 package net.ari.mymod.block;
 
-import jdk.incubator.vector.VectorOperators;
+//import jdk.incubator.vector.VectorOperators;
 import net.ari.mymod.MyMod;
 import net.ari.mymod.item.ModCreativeModeTab;
 import net.ari.mymod.item.ModItems;

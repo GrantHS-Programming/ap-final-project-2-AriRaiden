@@ -1,4 +1,6 @@
 {
   "item.mymod.raw_potassium": "Raw Potassium",
-  "item.mymod.banana": "Banana"
+  "item.mymod.banana": "Banana",
+
+  "block.mymod.block_of_banana": "Block of Banana"
 }
