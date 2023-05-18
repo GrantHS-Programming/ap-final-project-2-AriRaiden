@@ -27,21 +27,21 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour
                     .Properties
                     .of(Material.CACTUS)
-                    .strength(4f)
+                    .strength(.2f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.MYMOD_TAB);
 
     public static final RegistryObject<Block> POTASSIUM_ORE = registerBlock("potassium_ore",
             () -> new DropExperienceBlock(BlockBehaviour
                     .Properties
                     .of(Material.STONE)
-                    .strength(6f)
+                    .strength(.45f)
                     .requiresCorrectToolForDrops(),
                     UniformInt.of(1, 3)), ModCreativeModeTab.MYMOD_TAB);
     public static final RegistryObject<Block> DEEPSLATE_POTASSIUM_ORE = registerBlock("deepslate_potassium_ore",
             () -> new DropExperienceBlock(BlockBehaviour
                     .Properties
                     .of(Material.STONE)
-                    .strength(6f)
+                    .strength(.5f)
                     .requiresCorrectToolForDrops(),
                     UniformInt.of(1, 3)), ModCreativeModeTab.MYMOD_TAB);
 

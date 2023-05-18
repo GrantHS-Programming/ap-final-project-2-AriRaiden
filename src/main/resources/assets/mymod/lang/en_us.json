@@ -2,5 +2,7 @@
   "item.mymod.raw_potassium": "Raw Potassium",
   "item.mymod.banana": "Banana",
 
-  "block.mymod.block_of_banana": "Block of Banana"
+  "block.mymod.block_of_banana": "Block of Banana",
+  "block.mymod.deepslate_potassium_ore": "Deepslate Potassium Ore",
+  "block.mymod.potassium_ore": "Potassium Ore"
 }

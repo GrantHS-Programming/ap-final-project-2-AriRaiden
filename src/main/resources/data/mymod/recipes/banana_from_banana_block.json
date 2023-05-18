@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "banana",
+  "ingredients": [
+    {
+      "item": "mymod:block_of_banana"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "mymod:banana"
+  }
+}
