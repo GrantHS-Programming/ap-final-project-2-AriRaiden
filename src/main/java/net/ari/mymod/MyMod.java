@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.ari.mymod.block.ModBlocks;
 import net.ari.mymod.item.ModItems;
 import net.ari.mymod.world.feature.ModConfiguredFeatures;
+import net.ari.mymod.world.feature.ModPlacedFeatures;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -28,6 +29,7 @@ public class MyMod {
         ModBlocks.register(modEventBus);
 
         ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

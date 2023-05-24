@@ -14,9 +14,9 @@ public class ModPlacedFeatures {
     public static final DeferredRegister<PlacedFeature> PLACED_FEATURES =
             DeferredRegister.create(Registry.PLACED_FEATURE_REGISTRY, MyMod.MOD_ID);
 
-    public static final RegistryObject<PlacedFeature> POTASSIUM_ORE = PLACED_FEATURES.register("potassium_ore_placed",
+    public static final RegistryObject<PlacedFeature> POTASSIUM_ORE_PLACED = PLACED_FEATURES.register("potassium_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.POTASSIUM_ORE.getHolder().get(),
-                    commonOrePlacement(30, // VeinsPerChunk
+                    commonOrePlacement(7, // VeinsPerChunk
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-64), VerticalAnchor.aboveBottom(144)))));
 
     private static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
