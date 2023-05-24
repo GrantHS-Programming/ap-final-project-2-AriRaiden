@@ -16,8 +16,8 @@ public class ModPlacedFeatures {
 
     public static final RegistryObject<PlacedFeature> POTASSIUM_ORE_PLACED = PLACED_FEATURES.register("potassium_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.POTASSIUM_ORE.getHolder().get(),
-                    commonOrePlacement(7, // VeinsPerChunk
-                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-64), VerticalAnchor.aboveBottom(144)))));
+                    commonOrePlacement(16, // VeinsPerChunk
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-32), VerticalAnchor.aboveBottom(112))))); //most common at y = 40
 
     private static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
         return List.of(p_195347_, InSquarePlacement.spread(), p_195348_, BiomeFilter.biome());
