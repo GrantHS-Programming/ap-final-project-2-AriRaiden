@@ -1,12 +1,17 @@
 package net.ari.mymod.item;
 
 import net.ari.mymod.MyMod;
+import net.ari.mymod.base.ModArmorMaterial;
 import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -22,13 +27,13 @@ public class ModItems {
             () -> new Item(props()));
 
     public static final RegistryObject<ArmorItem> BANANA_HELMET = ITEMS.register("banana_helmet",
-            () -> new ArmorItem(null, EquipmentSlot.HEAD, props()));
+            () -> new ArmorItem(ArmorTiers.BANANA, EquipmentSlot.HEAD, props()));
     public static final RegistryObject<ArmorItem> BANANA_CHESTPLATE = ITEMS.register("banana_chestplate",
-            () -> new ArmorItem(null, EquipmentSlot.CHEST, props()));
+            () -> new ArmorItem(ArmorTiers.BANANA, EquipmentSlot.CHEST, props()));
     public static final RegistryObject<ArmorItem> BANANA_LEGGINGS = ITEMS.register("banana_leggings",
-            () -> new ArmorItem(null, EquipmentSlot.LEGS, props()));
+            () -> new ArmorItem(ArmorTiers.BANANA, EquipmentSlot.LEGS, props()));
     public static final RegistryObject<ArmorItem> BANANA_BOOTS = ITEMS.register("banana_boots",
-            () -> new ArmorItem(null, EquipmentSlot.FEET, props()));
+            () -> new ArmorItem(ArmorTiers.BANANA, EquipmentSlot.FEET, props()));
 
 
     public static Item.Properties props() {
@@ -43,7 +48,15 @@ public class ModItems {
     }
 
     public static class ArmorTiers {
-
+        public static final ArmorMaterial BANANA = new ModArmorMaterial(
+            "banana",
+            100,
+            new int[] {20, 40, 50, 10},
+            300,
+            SoundEvents.GENERIC_EAT,
+            0.0f,
+            0.0f,
+            () -> Ingredient.of(ModItems.BANANA.get()));
     }
 
 

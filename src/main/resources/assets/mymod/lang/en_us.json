@@ -2,6 +2,11 @@
   "item.mymod.raw_potassium": "Raw Potassium",
   "item.mymod.banana": "Banana",
 
+  "item.mymod.banana_helmet": "Banana Helmet",
+  "item.mymod.banana_chestplate": "Banana Chestplate",
+  "item.mymod.banana_leggings": "Banana Leggings",
+  "item.mymod.banana_boots": "Banana Boots",
+
   "block.mymod.block_of_banana": "Block of Banana",
   "block.mymod.deepslate_potassium_ore": "Deepslate Potassium Ore",
   "block.mymod.potassium_ore": "Potassium Ore"
