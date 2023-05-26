@@ -7,10 +7,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -34,6 +31,11 @@ public class ModItems {
             () -> new ArmorItem(ArmorTiers.BANANA, EquipmentSlot.LEGS, props()));
     public static final RegistryObject<ArmorItem> BANANA_BOOTS = ITEMS.register("banana_boots",
             () -> new ArmorItem(ArmorTiers.BANANA, EquipmentSlot.FEET, props()));
+
+    public static final RegistryObject<SwordItem> BANANA_SWORD = ITEMS.register("banana_sword",
+            () -> new SwordItem(null, 0 /*damage*/, 0 /*attack speed*/, props()));
+    public static final RegistryObject<PickaxeItem> BANANA_PICKAXE = ITEMS.register("banana_pickaxe",
+            () -> new PickaxeItem(, props()));
 
 
     public static Item.Properties props() {
