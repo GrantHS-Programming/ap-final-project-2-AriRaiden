@@ -51,7 +51,7 @@ public class ModItems {
         public static final ArmorMaterial BANANA = new ModArmorMaterial(
             "banana",
             100,
-            new int[] {20, 40, 50, 10},
+            new int[] {2, 4, 5, 2},
             300,
             SoundEvents.GENERIC_EAT,
             0.0f,
