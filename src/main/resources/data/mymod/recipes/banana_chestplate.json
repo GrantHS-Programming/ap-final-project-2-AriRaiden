@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "#X#",
+    "#X#"
+  ],
+  "key": {
+    "#": {
+      "item": "mymod:banana"
+    },
+    "X": {
+      "item": "mymod:block_of_banana"
+    }
+  },
+  "result": {
+    "item": "mymod:banana_chestplate"
+  }
+}
