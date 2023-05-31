@@ -2,6 +2,7 @@ package net.ari.mymod.item;
 
 import net.ari.mymod.MyMod;
 import net.ari.mymod.base.ModArmorMaterial;
+import net.ari.mymod.item.custom.ModArmorItem;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -24,7 +25,7 @@ public class ModItems {
             () -> new Item(props()));
 
     public static final RegistryObject<ArmorItem> BANANA_HELMET = ITEMS.register("banana_helmet",
-            () -> new ArmorItem(ArmorTiers.BANANA, EquipmentSlot.HEAD, props()));
+            () -> new ModArmorItem(ArmorTiers.BANANA, EquipmentSlot.HEAD, props()));
     public static final RegistryObject<ArmorItem> BANANA_CHESTPLATE = ITEMS.register("banana_chestplate",
             () -> new ArmorItem(ArmorTiers.BANANA, EquipmentSlot.CHEST, props()));
     public static final RegistryObject<ArmorItem> BANANA_LEGGINGS = ITEMS.register("banana_leggings",
@@ -32,10 +33,10 @@ public class ModItems {
     public static final RegistryObject<ArmorItem> BANANA_BOOTS = ITEMS.register("banana_boots",
             () -> new ArmorItem(ArmorTiers.BANANA, EquipmentSlot.FEET, props()));
 
-    public static final RegistryObject<SwordItem> BANANA_SWORD = ITEMS.register("banana_sword",
-            () -> new SwordItem(null, 0 /*damage*/, 0 /*attack speed*/, props()));
-    public static final RegistryObject<PickaxeItem> BANANA_PICKAXE = ITEMS.register("banana_pickaxe",
-            () -> new PickaxeItem(, props()));
+//    public static final RegistryObject<SwordItem> BANANA_SWORD = ITEMS.register("banana_sword",
+//            () -> new SwordItem(null, 0 /*damage*/, 0 /*attack speed*/, props()));
+//    public static final RegistryObject<PickaxeItem> BANANA_PICKAXE = ITEMS.register("banana_pickaxe",
+//            () -> new PickaxeItem(, props()));
 
 
     public static Item.Properties props() {
