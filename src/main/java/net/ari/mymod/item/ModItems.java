@@ -10,6 +10,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -34,15 +35,15 @@ public class ModItems {
             () -> new ArmorItem(ArmorTiers.BANANA, EquipmentSlot.FEET, props()));
 
     public static final RegistryObject<SwordItem> BANANA_SWORD = ITEMS.register("banana_sword",
-            () -> new SwordItem(null, 0 /*damage*/, 0 /*attack speed*/, props()));
+            () -> new SwordItem(Tiers.BANANA, 0 /*damage*/, 0 /*attack speed*/, props()));
     public static final RegistryObject<PickaxeItem> BANANA_PICKAXE = ITEMS.register("banana_pickaxe",
-            () -> new PickaxeItem(null, 2, 3.5f, props()));
+            () -> new PickaxeItem(Tiers.BANANA, 2, 3.5f, props()));
     public static final RegistryObject<ShovelItem> BANANA_SHOVEL = ITEMS.register("banana_shovel",
-            () -> new ShovelItem(null, 0, 0, props()));
+            () -> new ShovelItem(Tiers.BANANA, 0, 0, props()));
     public static final RegistryObject<AxeItem> BANANA_AXE = ITEMS.register("banana_axe",
-            () -> new AxeItem(null, 0, 0, props()));
+            () -> new AxeItem(Tiers.BANANA, 0, 0, props()));
     public static final RegistryObject<HoeItem> BANANA_HOE = ITEMS.register("banana_hoe",
-            () -> new HoeItem(null, 0, 0, props()));
+            () -> new HoeItem(Tiers.BANANA, 0, 0, props()));
 
 
     public static Item.Properties props() {
@@ -73,4 +74,9 @@ public class ModItems {
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
+
+    public static class Tiers {
+        public static final Tier BANANA = new ForgeTier(2, 200, 1.5f, 0, 350, null, ()-> Ingredient.of(ModItems.BANANA.get()));
+    }
 }
+
