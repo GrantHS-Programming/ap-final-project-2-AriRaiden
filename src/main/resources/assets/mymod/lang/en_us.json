@@ -9,5 +9,13 @@
 
   "block.mymod.block_of_banana": "Block of Banana",
   "block.mymod.deepslate_potassium_ore": "Deepslate Potassium Ore",
-  "block.mymod.potassium_ore": "Potassium Ore"
+  "block.mymod.potassium_ore": "Potassium Ore",
+
+  "block.mymod.banana_log": "Banana Log",
+  "block.mymod.banana_leaves": "Banana Leaves",
+  "block.mymod.banana_wood": "Banana Wood",
+  "block.mymod.banana_planks": "Banana Planks",
+  "block.mymod.banana_sapling": "Banana_sapling",
+  "block.mymod.stripped_banana_log": "Stripped Banana Log",
+  "block.mymod.stripped_banana_wood": "Stripped Banana Wood"
 }

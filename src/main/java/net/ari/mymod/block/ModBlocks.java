@@ -5,6 +5,7 @@ import net.ari.mymod.MyMod;
 import net.ari.mymod.base.ModFlammableRotatedPillarBlock;
 import net.ari.mymod.item.ModCreativeModeTab;
 import net.ari.mymod.item.ModItems;
+import net.ari.mymod.world.feature.BananaTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -117,11 +118,11 @@ public class ModBlocks {
             },
             ModCreativeModeTab.MYMOD_TAB);
 
-//    public static final RegistryObject<Block> BANANA_SAPLING = registerBlock("banana_log",
-//            () -> new SaplingBlock( ,BlockBehaviour
-//                    .Properties
-//                    .copy(Blocks.OAK_SAPLING)),
-//            ModCreativeModeTab.MYMOD_TAB);
+    public static final RegistryObject<Block> BANANA_SAPLING = registerBlock("banana_sapling",
+            () -> new SaplingBlock(new BananaTreeGrower(),BlockBehaviour
+                    .Properties
+                    .copy(Blocks.OAK_SAPLING)),
+            ModCreativeModeTab.MYMOD_TAB);
 
 
 
