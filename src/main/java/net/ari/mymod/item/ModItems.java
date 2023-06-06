@@ -35,15 +35,15 @@ public class ModItems {
             () -> new ArmorItem(ArmorTiers.BANANA, EquipmentSlot.FEET, props()));
 
     public static final RegistryObject<SwordItem> BANANA_SWORD = ITEMS.register("banana_sword",
-            () -> new SwordItem(Tiers.BANANA, 0 /*damage*/, 0 /*attack speed*/, props()));
+            () -> new SwordItem(Tiers.BANANA, 5 /*damage*/, -2.4f /*attack speed*/, props()));
     public static final RegistryObject<PickaxeItem> BANANA_PICKAXE = ITEMS.register("banana_pickaxe",
-            () -> new PickaxeItem(Tiers.BANANA, 2, 3.5f, props()));
+            () -> new PickaxeItem(Tiers.BANANA, 3, -2.8f, props()));
     public static final RegistryObject<ShovelItem> BANANA_SHOVEL = ITEMS.register("banana_shovel",
-            () -> new ShovelItem(Tiers.BANANA, 0, 0, props()));
+            () -> new ShovelItem(Tiers.BANANA, 3, -3f, props()));
     public static final RegistryObject<AxeItem> BANANA_AXE = ITEMS.register("banana_axe",
-            () -> new AxeItem(Tiers.BANANA, 0, 0, props()));
+            () -> new AxeItem(Tiers.BANANA, 8, -3.1f, props()));
     public static final RegistryObject<HoeItem> BANANA_HOE = ITEMS.register("banana_hoe",
-            () -> new HoeItem(Tiers.BANANA, 0, 0, props()));
+            () -> new HoeItem(Tiers.BANANA, 0, -1f, props()));
 
 
     public static Item.Properties props() {

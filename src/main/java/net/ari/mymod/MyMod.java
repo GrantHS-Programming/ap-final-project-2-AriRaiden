@@ -2,6 +2,7 @@ package net.ari.mymod;
 
 import com.mojang.logging.LogUtils;
 import net.ari.mymod.block.ModBlocks;
+import net.ari.mymod.effect.ModEffects;
 import net.ari.mymod.item.ModItems;
 import net.ari.mymod.world.feature.ModConfiguredFeatures;
 import net.ari.mymod.world.feature.ModPlacedFeatures;
@@ -30,6 +31,8 @@ public class MyMod {
 
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
+
+        ModEffects.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

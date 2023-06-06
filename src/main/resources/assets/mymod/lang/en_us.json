@@ -6,6 +6,11 @@
   "item.mymod.banana_chestplate": "Banana Chestplate",
   "item.mymod.banana_leggings": "Banana Leggings",
   "item.mymod.banana_boots": "Banana Boots",
+  "item.mymod.banana_sword": "Banana Sword",
+  "item.mymod.banana_pickaxe": "Banana Pickaxe",
+  "item.mymod.banana_axe": "Banana Axe",
+  "item.mymod.banana_shovel": "Banana Shovel",
+  "item.mymod.banana_hoe": "Banana Hoe",
 
   "block.mymod.block_of_banana": "Block of Banana",
   "block.mymod.deepslate_potassium_ore": "Deepslate Potassium Ore",
