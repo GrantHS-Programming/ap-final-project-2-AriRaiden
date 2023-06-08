@@ -10,7 +10,9 @@ import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
@@ -20,6 +22,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
+import org.checkerframework.checker.units.qual.C;
 
 import java.util.List;
 
@@ -40,6 +43,13 @@ public class ModConfiguredFeatures {
                             BlockStateProvider.simple(ModBlocks.BANANA_LEAVES.get()),
                             new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                             new TwoLayersFeatureSize(1, 0, 2)).build()));
+
+    public static final RegistryObject<ConfiguredFeature<?, ?>> BANANA_TREE_SPAWN =
+            CONFIGURED_FEATURES.register("banana_tree_spawn", () -> new ConfiguredFeature<>(Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(
+                            ModPlacedFeatures.BANANA_TREE_CHECKED.getHolder().get(),
+                            0.5F)), ModPlacedFeatures.BANANA_TREE_CHECKED.getHolder().get())));
+
     public static void register(IEventBus eventbus) {
         CONFIGURED_FEATURES.register(eventbus);
     }

@@ -1,10 +1,14 @@
 package net.ari.mymod.world.feature;
 
 import net.ari.mymod.MyMod;
+import net.ari.mymod.block.ModBlocks;
 import net.minecraft.core.Registry;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -18,6 +22,14 @@ public class ModPlacedFeatures {
             () -> new PlacedFeature(ModConfiguredFeatures.POTASSIUM_ORE.getHolder().get(),
                     commonOrePlacement(16, // VeinsPerChunk
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-32), VerticalAnchor.aboveBottom(112))))); //most common at y = 40
+
+    public static final RegistryObject<PlacedFeature> BANANA_TREE_CHECKED = PLACED_FEATURES.register("banana_tree_checked",
+            () -> new PlacedFeature(ModConfiguredFeatures.BANANA_TREE.getHolder().get(),
+                    List.of(PlacementUtils.filteredByBlockSurvival(ModBlocks.BANANA_SAPLING.get()))));
+
+    public static final RegistryObject<PlacedFeature> BANANA_TREE_PLACED = PLACED_FEATURES.register("banana_tree_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.BANANA_TREE_SPAWN.getHolder().get(), VegetationPlacements.treePlacement(
+                    PlacementUtils.countExtra(3, .1f, 2))));
 
     private static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
         return List.of(p_195347_, InSquarePlacement.spread(), p_195348_, BiomeFilter.biome());

@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_column",
   "textures": {
-    "end": "mymod:block/stripped_banana_wood",
-    "side": "mymod:block/stripped_banana_wood"
+    "end": "mymod:block/stripped_banana_log",
+    "side": "mymod:block/stripped_banana_log"
   }
 }

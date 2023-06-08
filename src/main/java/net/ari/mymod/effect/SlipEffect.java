@@ -18,7 +18,7 @@ public class SlipEffect extends MobEffect {
             double z = pLivingEntity.getZ();
 
             pLivingEntity.teleportTo(x, y, z);
-            pLivingEntity.setDeltaMovement(0,0,0)
+            pLivingEntity.setDeltaMovement(0,0,0);
         }
         super.applyEffectTick(pLivingEntity, pAmplifier);
     }

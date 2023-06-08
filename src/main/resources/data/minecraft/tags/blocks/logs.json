@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mymod:banana_log",
+    "mymod:banana_wood",
+    "mymod:stripped_banana_log",
+    "mymod:stripped_banana_wood"
+  ]
+}

@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "mymod:block/banana_wood",
+      "model": "mymod:block/banana_log",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "mymod:block/banana_wood"
+      "model": "mymod:block/banana_log"
     },
     "axis=z": {
-      "model": "mymod:block/banana_wood",
+      "model": "mymod:block/banana_log",
       "x": 90
     }
   }
