@@ -124,6 +124,9 @@ public class ModBlocks {
                     .copy(Blocks.OAK_SAPLING)),
             ModCreativeModeTab.MYMOD_TAB);
 
+    public static final RegistryObject<Block> BANANA_DOOR = registerBlock("banana_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)), ModCreativeModeTab.MYMOD_TAB);
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

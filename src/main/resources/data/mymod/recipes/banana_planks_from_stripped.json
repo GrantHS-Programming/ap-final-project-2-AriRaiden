@@ -3,7 +3,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "item": "mymod:banana_log"
+      "item": "mymod:stripped_banana_log"
     }
   ],
   "result": {

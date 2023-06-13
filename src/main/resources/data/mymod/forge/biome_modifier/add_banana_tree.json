@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#forge:is_jungle",
+  "biomes": "#forge:is_plains",
   "features": "mymod:banana_tree_placed",
   "step": "vegetal_decoration"
 }

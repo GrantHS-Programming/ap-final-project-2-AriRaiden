@@ -22,5 +22,6 @@
   "block.mymod.banana_planks": "Banana Planks",
   "block.mymod.banana_sapling": "Banana_sapling",
   "block.mymod.stripped_banana_log": "Stripped Banana Log",
-  "block.mymod.stripped_banana_wood": "Stripped Banana Wood"
+  "block.mymod.stripped_banana_wood": "Stripped Banana Wood",
+  "block.mymod.banana_door": "Banana Door"
 }
